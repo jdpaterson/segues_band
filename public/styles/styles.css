@@ -16,6 +16,7 @@ main {
 }
 h1 {
   margin-top: 0px;
+  margin-bottom: 15px;
   font-size: 64px;
   font-weight: 200;
   text-align: center;
@@ -33,14 +34,8 @@ header nav ul {
   display: flex;
   justify-content: space-around;
 }
-/* #releases-list {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-ul {
-  position: fixed;
+#releases-list ul {
+  margin-top: 150px;
   bottom: 0px;
   margin-left: 0px;
   padding-left: 0px;
@@ -48,7 +43,11 @@ ul {
 }
 li {
   margin-top: 25px;
-} */
+}
+#releases-list {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (min-width: 800px) {
   body {
     background-image: url("../pics/IMG_7696.JPG");
@@ -60,10 +59,23 @@ li {
     padding-top: 50px;
   }
   h1 {
-    font-size: 124px;
+    font-size: 100px;
     font-weight: 200;
   }
-  /* .releases-list {
-    margin-left: 250px;
-  } */
+  #releases-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  #releases-list ul {
+    bottom: 0px;
+    margin-left: 0px;
+    margin-top: 25px;
+    padding-left: 0px;
+    list-style-type: none;
+    width: 600px;
+  }
+  li {
+    margin-top: 25px;
+  }
 }
