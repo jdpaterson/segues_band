@@ -5,7 +5,7 @@
 body {
   background-image: url("../pics/IMG_7696_mobile_crop.JPG");
   background-position: center;
-  color: lightslategrey;
+  color: darkslategrey;
   font-family: ChopinScript;
   font-size: 32px;
   margin: 0px;
@@ -47,6 +47,16 @@ li {
 #releases-list {
   display: flex;
   justify-content: center;
+}
+footer {
+  display: flex;
+}
+footer .credits {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  opacity: 0.5;
+  padding: 25px;
 }
 @media screen and (min-width: 800px) {
   body {
