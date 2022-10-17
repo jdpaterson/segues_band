@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Segues - Vancouver Rock Band</title>
-    <link rel="stylesheet" href="public/styles/normalize.css" />
-    <link rel="stylesheet" href="public/styles/styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1><a href="./index.html">The Segues</a></h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="./shows.html">Shows</a>
-          </li>
-          <li>
-            <a href="./music.html">Music</a>
-          </li>
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <!-- <footer>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Segues - Vancouver Rock Band</title>
+  <link rel="stylesheet" href="public/styles/normalize.css" />
+  <link rel="stylesheet" href="public/styles/styles.css" />
+</head>
+
+<body>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '780945839686339',
+        xfbml: true,
+        version: 'v15.0'
+      });
+      FB.AppEvents.logPageView();
+      FB.api(
+        "/instagram_oembed?url=https://www.instagram.com/seguestheband/&access_token=780945839686339|04502165624e134b6dd7f63f34e8147d",
+        function (response) {
+          console.log("Response: ", response);
+          if (response && !response.error) {
+            /* handle the result */
+          }
+        }
+      );
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <header>
+    <h1><a href="./index.html">The Segues</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="./shows.html">Shows</a>
+        </li>
+        <li>
+          <a href="./music.html">Music</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Instagram Feed -->
+    <div id="instaFeed"></div>
+  </main>
+  <!-- <footer>
       <dl class="credits">
         <dt>J. Paterson</dt>
         <dd>Vocals/Guitar</dd>
@@ -35,5 +67,6 @@
         <dd>Drums</dd>
       </dl>
     </footer> -->
-  </body>
+</body>
+
 </html>
