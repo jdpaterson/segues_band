@@ -1,0 +1,23 @@
+{
+  "name": "segues_band",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./dev/file-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdpaterson/segues_band.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdpaterson/segues_band/issues"
+  },
+  "homepage": "https://github.com/jdpaterson/segues_band#readme",
+  "devDependencies": {
+    "file-server": "^2.2.1"
+  }
+}
